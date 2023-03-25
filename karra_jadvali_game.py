@@ -22,6 +22,7 @@ def Karra():
     e2["state"]="normal"
     b2["state"]="normal"
     b3["state"]="normal"
+    l3.config(text="")
 
 def Bilmadim():
     l2.config(text=f"{i}*{j}={i*j}")
