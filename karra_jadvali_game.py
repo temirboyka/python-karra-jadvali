@@ -31,6 +31,7 @@ def Bilmadim():
 
 
 def Natija():
+    
     q = e2.get()
     if q =='':
 
@@ -38,10 +39,14 @@ def Natija():
     
     else:
         if i*j == int(q):
-            l3.config(text="barakalla topdingiz!")
+ 
+            l3.config(text="topdingiz!")
+          
 
         else:
-            l3.config(text="to'g'ri topmadingiz!")
+
+            l3.config(text="topmadingiz!")
+            
 
 
 
@@ -52,11 +57,11 @@ l3.pack(pady=5)
 l1=Label(w,text="Javobni kiriting: ",bg="cyan",fg="black",font=("Arial",10))
 l1.pack(pady=3)
 e2=Entry(w,width=10,font=('Helvetica',20),state="disabled")
-e2.pack(pady=3)
+e2.pack(pady=2)
 b1=Button(w,text="Boshlash",width=9,font=('Algerian',9),height=1,command=Karra)
 b1.pack(pady=5)
 b2=Button(w,text="Natija",width=9,font=('Algerian',9),height=1, state="disabled",command=Natija)
-b2.pack(pady=2)
+b2.pack(pady=5)
 b3=Button(w,text="Bilmadim",width=9,font=('Algerian',9),height=1,state="disabled",command=Bilmadim)
-b3.pack(pady=2)
+b3.pack(pady=5)
 w.mainloop()
